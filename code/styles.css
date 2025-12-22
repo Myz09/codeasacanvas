@@ -10,8 +10,10 @@ body{
 
 header {
   background-color: #1e1e1e;
-  padding: 15px 40px;
+  padding: 3dvh 40px;
   margin-bottom:5dvh;
+  position:fixed;
+  min-width:100dvw;
 }
 
 .navbar {
@@ -29,16 +31,23 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 3dvw;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #4da6ff;
+}
+.home-sec{
+  padding-top:12dvh;
+  min-height:100dvh;
+}
+#home{
+  /* padding-top:dvh; */
 }
