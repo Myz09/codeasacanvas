@@ -85,8 +85,8 @@ header {
 /* SMALL BODY (MOBILE) */
  @media(max-width:768px){
     .home-split{
-        min-height:auto;
-    }
+        min-height:50dvh;
+    }   
  }
 /* HOME */
 .home-split{
