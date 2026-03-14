@@ -82,12 +82,6 @@ header {
   min-height:6dvh;
 }
 
-/* SMALL BODY (MOBILE) */
- @media(max-width:768px){
-    .home-split{
-        min-height:50dvh;
-    }   
- }
 /* HOME */
 .home-split{
   display:flex;
@@ -527,3 +521,13 @@ footer {
   transform: translateY(0px);
   opacity: 1;
 }
+
+/* SMALL BODY (MOBILE) */
+ @media(max-width:768px){
+    .home-split{
+        min-height:50dvh;
+    }   
+    body{
+        display:contents;
+    }
+ }
