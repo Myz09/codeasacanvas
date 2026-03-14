@@ -345,50 +345,6 @@ iframe {
     font-weight: 500;
 }
 
-/* PRIZES */
-/* .prizes-row {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-}
-
-.prize-card {
-    border-radius: 16px;
-    padding: 1rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #5a4a6a;
-    background: rgba(255,255,255,0.6);
-    border: 2px solid #e8c8f5;
-}
-
-.prize-card.gold {
-    background: rgba(255, 240, 200, 0.7);
-    border-color: #f0d080;
-    font-size: 1.2rem;
-    padding: 1.3rem 2rem;
-}
-
-.prize-card.silver {
-    background: rgba(220, 220, 235, 0.6);
-    border-color: #c0c0d8;
-}
-
-.prize-card.bronze {
-    background: rgba(240, 210, 185, 0.6);
-    border-color: #d4a882;
-}
-
-.prize-note {
-    font-size: 0.9rem;
-    color: #8a7aaa;
-    font-style: italic;
-} */
-
-
 
 /* ── FAQ ── */
 .faq-grid {
@@ -523,11 +479,14 @@ footer {
 }
 
 /* SMALL BODY (MOBILE) */
- @media(max-width:768px){
-    .home-split{
-        min-height:50dvh;
-    }   
-    body{
-        display:contents;
-    }
- }
+@media (max-width: 760px) {
+  .home-split, .about-split {
+    flex-direction: column;      
+    align-items: center;         
+    text-align: center;          
+    gap: 2rem;                 
+    min-height: auto;            
+    padding: 1rem;              
+  }
+
+}
