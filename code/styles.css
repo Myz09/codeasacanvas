@@ -84,21 +84,12 @@ header {
 
 /* HOME */
 .home-split{
-  display:flex;
-  text-align:left;
-  align-items:flex-start;
+  display:block;
+  text-align:center;
+  align-items:center;
   gap:4rem;
   min-height: 90dvh;
 }
-
-.home-left{
-  flex:1;
-}
-
-.home-right{
-  flex:1;
-}
-
 /* HOME TEXT */
 .home-sec h1 {
     font-family: 'Press Start 2P', system-ui;
@@ -142,12 +133,13 @@ header {
 
 /* HOME IMG */
 .hero-img {
-    width: 100%;
-    max-width: 100%;
+    width: 50%;
+    max-width: 50%;
     height: 200px;
     object-fit: cover;
     object-position: center;
     border-radius: 24px;
+    margin:auto;
     margin-top: 1.5rem;
     box-shadow: 0 8px 32px rgba(181, 101, 212, 0.2);
 }
@@ -170,6 +162,14 @@ iframe {
 
 .form-label {
     font-family: 'Press Start 2P', system-ui;
+    font-size: 0.7rem;
+    color: #b565d4;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.form-text {
+    /* font-family: 'Press Start 2P', system-ui; */
     font-size: 0.7rem;
     color: #b565d4;
     margin-bottom: 0.5rem;
@@ -466,6 +466,56 @@ footer {
 #about h1, #faq h1, #sponsors h1 {
   font-size: clamp(1.2rem, 3vw, 2.5rem);
 }
+#winners h1{
+    font-size: clamp(1.6rem, 4vw, 3rem);
+}
+#winners-page{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 100%;
+    text-align: center;
+    align-items:center;
+    margin:auto;
+}
+ .winners-card {
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid #e8c8f5;
+    border-radius: 20px;
+    padding: 1.5rem 1.2rem;
+    flex: 1;
+    width: 30dvw;
+    height:35dvh;
+    backdrop-filter: blur(6px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin:5%;
+    display:block;
+}
+
+.winners-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(181, 101, 212, 0.15);
+} 
+.winners-image{
+    height:20dvh;
+    /* width:350px; */
+    margin:2.5%;
+}
+
+#winners h3 {
+    /* font-family: 'Press Start 2P', system-ui; */
+    font-size: 1rem;
+    color: #b565d4;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+}
+
+#winners p {
+    font-size: 0.9rem;
+    color: #5a4a6ab6;
+    line-height: 1.6;
+} 
+
 
 /* ── Scroll/Animations ── */
 .scroll {
